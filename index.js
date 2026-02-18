@@ -2,8 +2,8 @@ const dgram = require('dgram');
 const client = dgram.createSocket('udp4');
 
 // --- AYARLAR ---
-const SERVER_IP = 'BURAYA_IP_YAZ';     // Örn: 185.123.45.67
-const SERVER_PORT = 27015;            // Örn: 27015
+const SERVER_IP = '51.38.205.167';     // Örn: 185.123.45.67
+const SERVER_PORT = 11451;            // Örn: 27015
 const BOT_NAME = 'Aktif_Bot_724';     // Sunucuda görünecek isim
 // ---------------
 
@@ -46,4 +46,5 @@ getChallenge();
 // GitHub Actions'ın kapanmaması için sonsuz döngü logu
 setInterval(() => {
     console.log("Bot hayatta...");
+
 }, 300000); // 5 dakikada bir "hayattayım" yazısı
